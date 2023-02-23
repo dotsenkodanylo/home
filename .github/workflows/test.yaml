@@ -14,4 +14,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            whoami
+            cd dev/home
+            git pull origin master
+            git status
