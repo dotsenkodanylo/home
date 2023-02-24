@@ -16,10 +16,4 @@ jobs:
             cd dev/home
             git pull origin master
             docker ps
-          # docker build -t home-testing .
-            docker ps 
-          # build new image
-          # delete old image/container - one idea -> append shortened commit tag to image & container as tag. 
-          # run the new image via new container
-          # Port is subject to change... will need to adjust workflow to get latest public IPv4 address that ISP assigns.
           
