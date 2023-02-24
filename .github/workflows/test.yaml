@@ -8,7 +8,6 @@ jobs:
       - name: executing remote deploy of server via ssh
         uses: appleboy/ssh-action@master
         with:
-          # Port is subject to change... will need to adjust workflow to get latest public IPv4 address that ISP assigns.
           host: ${{ secrets.SSH_ADDRESS }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
@@ -21,3 +20,4 @@ jobs:
           # build new image
           # delete old image/container - one idea -> append shortened commit tag to image & container as tag. 
           # run the new image via new container
+          # Port is subject to change... will need to adjust workflow to get latest public IPv4 address that ISP assigns.
