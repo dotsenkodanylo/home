@@ -1,12 +1,10 @@
 FROM node:18-alpine3.16
 
-WORKDIR /home
+WORKDIR /workdir
 
-COPY package*.json ./
+RUN git clone https://github.com/dotsenkodanylo/home
 
 RUN npm install
-
-COPY . .
 
 RUN npm run build
 
