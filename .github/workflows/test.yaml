@@ -15,7 +15,6 @@ jobs:
           script: |
             cd dev/home-test/home
             git pull origin master
-            npm install
-            npm run build
             docker build -t home-test:unstable .
+            docker ps -a
           
