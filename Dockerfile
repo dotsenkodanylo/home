@@ -6,7 +6,7 @@ RUN apk update && apk add git
 
 RUN git clone https://github.com/dotsenkodanylo/home
 
-RUN cd home
+WORKDIR /workdir/home
 
 RUN npm install
 
