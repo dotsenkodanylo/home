@@ -29,6 +29,7 @@ export default function Home() {
       <div style={{...styles.container}}>
         <h1 style={{marginBottom: '5px'}}>Hello; Welcome to my webpage!</h1>
         <p>Currently there is not much on this page, so here is an animation!</p>
+        <p>Docker status: yes, i think</p>
         {/* <p>Also here is some info on how to deploy a page/app just like this to your own server.</p> */}
         <p style={{fontSize: '11px', marginTop: '5px'}}>* Queue a cube or something that will follow the cursor or something... *</p>
       </div>
