@@ -13,9 +13,9 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd dev/home
+            cd dev/home-test/home
             git pull origin master
-            docker image ls
-            docker build -t home_test:development .
-            docker image ls
+            npm install
+            npm run build
+            docker build -t home-test:unstable .
           
