@@ -17,6 +17,6 @@ jobs:
             git pull origin master
             docker build --no-cache -t home-test:unstable .
             docker stop home-tester
-            docker run home-tester
+            docker rm home-tester
+            docker image prune -f 
             docker run --name home-tester --publish 3000:3000 -d home-test:unstable
-            docker image prune -f          
