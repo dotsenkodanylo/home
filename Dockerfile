@@ -8,7 +8,7 @@ RUN git clone https://github.com/dotsenkodanylo/home
 
 WORKDIR /workdir/home
 
-RUN npm ci
+RUN npm install
 
 RUN npm run build
 
