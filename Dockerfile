@@ -2,7 +2,7 @@ FROM node:18-alpine3.16
 
 WORKDIR /workdir
 
-ADD . .
+ADD . /workdir
 
 RUN npm install
 
