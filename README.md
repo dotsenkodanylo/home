@@ -8,3 +8,8 @@ Deployment strategy:
     * In github actions container, SSH to server.
     * In repo, run all installations & build, before any docker behaviour invoked.
     * Build docker container, with all the files just copied in.
+    * Success!
+
+Next steps:
+* Finalize a DNS name.
+* Finalize sub-domaining instead of route-based proxying.
