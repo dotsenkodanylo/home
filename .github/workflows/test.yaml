@@ -13,10 +13,10 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd dev/home-test/home
+            cd dev/home
             git pull origin master
-            docker build --no-cache -t home-test:unstable .
             docker stop home-tester
             docker rm home-tester
-            docker image prune -f 
+            docker rmi home-test:unstable
+            docker build --no-cache -t home-test:unstable .
             docker run --name home-tester --publish 3000:3000 -d home-test:unstable

@@ -1,4 +1,4 @@
-FROM node:18-alpine3.16
+FROM node:16
 
 WORKDIR /workdir
 
@@ -8,7 +8,7 @@ RUN git clone https://github.com/dotsenkodanylo/home
 
 WORKDIR /workdir/home
 
-RUN npm install
+RUN npm ci
 
 RUN npm run build
 
