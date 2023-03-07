@@ -11,5 +11,5 @@ Deployment strategy:
     * Success!
 
 Next steps:
-* Finalize a DNS name.
-* Finalize sub-domaining instead of route-based proxying.
+* Optimize yaml workflow; something iffy with updating the images/containers to correct state.
+* FontAwesome authorization will be through a custom domain specific npmrc file. 
