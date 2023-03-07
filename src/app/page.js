@@ -46,6 +46,7 @@ export default function HomePage() {
 
                 <p>Otherwise, thanks for visiting! <span style={{fontSize: '22px', lineHeight: '1px'}}>&#129312;</span></p>
 
+                <sup>This page will *NOT* look ok on mobile, pls don't try...</sup>
                 {/* <p style={{ fontSize: '11px', marginTop: '5px' }}>
                     * Queue a cube or something that will follow the cursor or something... *
                 </p> */}
