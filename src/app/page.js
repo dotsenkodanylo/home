@@ -44,7 +44,7 @@ export default function HomePage() {
 
                 <p>For a full intuitive breakdown on how this server was configured, or if you're just curious, feel free to check it out <a href="/notes/server-setup">here</a>.</p>
 
-                <p>Otherwise, thank you for visiting! <span style={{fontSize: '22px', lineHeight: '1px'}}>&#129312;</span></p>
+                <p>Otherwise, thanks for visiting! <span style={{fontSize: '22px', lineHeight: '1px'}}>&#129312;</span></p>
 
                 {/* <p style={{ fontSize: '11px', marginTop: '5px' }}>
                     * Queue a cube or something that will follow the cursor or something... *
