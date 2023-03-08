@@ -156,7 +156,7 @@ sudo certbot --nginx -d foobar.org
 ```
 What this will do is create an SSL certificate, and automatically modify your nginx condfiguration blocks that match the server name (which is why our LAN IP server block and our DNS named block were two detached blocks).
 
-24. Restart your nginx server, and go back to your router port forwarding rules. Create a new rule, similar to the one you have already created, except this time the ports should be 443 to 443, for the same device. What this will do is port forward HTTPS requests to your machine, since SSL based requests occupy a different default port than plain HTTP. Once your ruler is created, try accessing your domain through a browser on a different network, and you should now see that your access is encrypted! And that's it!
+24. Restart your nginx server, and go back to your router port forwarding rules. Create a new rule, similar to the one you have already created, except this time the ports should be 443 to 443, for the same device. What this will do is port forward HTTPS requests to your machine, since SSL based requests occupy a different default port than plain HTTP. Once your rule is created, try accessing your domain through a browser on a different network, and you should now see that your access is encrypted! And that's it!
 
 
 
